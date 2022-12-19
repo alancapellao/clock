@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/relogio.png">
+    <title>Relógio Digital</title>
+</head>
+
+<body onload="time24()">
+    <div class="container">
+        <div class="theme">
+            <h3>Modo noturno</h3>
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="format">
+            <h3>Formato 24h</h3>
+            <label class="switch-f">
+                <input type="checkbox" id="toggle-f" checked>
+                <span class="slider-f round-f"></span>
+            </label>
+        </div>
+        <div class="clock">
+            <time></time>
+            <p class="date" style="font-size: 30%;"></p>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
